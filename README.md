@@ -23,21 +23,21 @@ SyriaTel is facing the challenge of customer churn, where customers discontinue 
 ## Exploratory Data Analysis
 
 ### Checking Counts for Columns with Numeric Features
-![Description of Image](https://github.com/DoreenMolly/dsc-phase-3-project/blob/main/Image1.png)
+![Description of Image](https://github.com/DoreenMolly/dsc-phase-3-project/blob/main/images/Image1.png)
 
 ### Checking Counts for Columns with Categorical Features
-![Description of Image](https://github.com/DoreenMolly/dsc-phase-3-project/blob/main/Image2.png)
+![Description of Image](https://github.com/DoreenMolly/dsc-phase-3-project/blob/main/images/Image2.png)
 
 
 ## Modeling
-![Description of Image](https://github.com/DoreenMolly/dsc-phase-3-project/blob/main/Image3.png)
+![Description of Image](https://github.com/DoreenMolly/dsc-phase-3-project/blob/main/images/Image3.png)
 Our Logistic Regression model has a relatively high number of false positives (215) compared to true positives (351), indicating that it often incorrectly classifies negative instances as positive. The number of false negatives (34) is lower than the number of false positives, suggesting that it is more likely to incorrectly classify positive instances as negative.
 
 Our XGBoost model shows a very low number of false positives (1) and a relatively low number of false negatives (15), indicating high precision and recall. The high number of true positives (555) and true negatives (86) suggests that it performs well in distinguishing between the classes.
 
 Our Random Forest model has a high number of true positives (2799) and true negatives (2615), indicating strong overall performance. The number of false positives (51) and false negatives (235) is higher than in the XGBoost, but still relatively low given the large number of instances.
 
-![Description of Image](https://github.com/DoreenMolly/dsc-phase-3-project/blob/main/Image4.png)
+![Description of Image](https://github.com/DoreenMolly/dsc-phase-3-project/blob/main/images/Image4.png)
 
 ## Conclusion
 Among the three models evaluated (Logistic Regression, XGBoost, Random Forest), XGBoost demonstrates the best overall performance across multiple metrics, including accuracy, precision, recall, and F1 score. It consistently outperforms both Logistic Regression and Random Forest, indicating its effectiveness in predicting churn.
@@ -47,7 +47,7 @@ Analyzing the confusion matrices reveals that XGBoost has the lowest number of f
 Based on these findings, I recommend using the XGBoost model as the final predictive model for churn prediction. Its superior performance in terms of accuracy, precision, recall, and F1 score, along with its robustness demonstrated through cross-validation, makes it the most suitable choice for predicting customer churn.
 
 ## Recommendations
-![Description of Image](https://github.com/DoreenMolly/dsc-phase-3-project/blob/main/Image5.png)
+![Description of Image](https://github.com/DoreenMolly/dsc-phase-3-project/blob/main/images/Image5.png)
 
 Based on our Feature Importance graph, to reduce churn, I would advise SyriaTel to:
 
