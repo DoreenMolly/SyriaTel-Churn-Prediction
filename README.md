@@ -1,1 +1,1 @@
-# dsc-phase-3-project
+# SyriaTel Churn Prediction
